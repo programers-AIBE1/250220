@@ -20,7 +20,7 @@ public class Bot {
             .POST(HttpRequest.BodyPublishers.ofString("{\"contents\": [{\"parts\":[{\"text\": \"웃는 표정 이모티콘 하나만 줘\"}]}]}")) 
             .build();
 
-        HttpResponse<String> airesponse = null
+        HttpResponse<String> airesponse = null;
         try{
             HttpResponse<String> airesponse = aiclient.send(
                 airequest, HttpResponse.BodyHandlers.ofString()
