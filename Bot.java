@@ -22,7 +22,7 @@ public class Bot {
 
         HttpResponse<String> airesponse = null;
         try{
-            HttpResponse<String> airesponse = aiclient.send(
+            airesponse = aiclient.send(
                 airequest, HttpResponse.BodyHandlers.ofString()
             );
             System.out.println("요청 코드 : " + airesponse.statusCode());
